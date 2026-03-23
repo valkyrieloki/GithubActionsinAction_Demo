@@ -16,5 +16,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6.0.2
 
-      - name: List files in repository
-        run : ls
+      - name: List files in repository ${{ github.repository }}
+        run : tree
